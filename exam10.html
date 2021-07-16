@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let data = '{id: "abc", pass: "1234"}'; // Object 처럼 보이지만 문자열.
+		console.log(data.id); // undefined
+		let data2 = {id: "abc", pass: "1234"};
+		console.log(data2.id);
+		
+		// 주로 백엔드에서 넘어오는 데이터의 형태(Ajax)
+		let data3 = '{"id": "abc", "pass": "1234"}';
+		
+		// 사용하기 편한 타입인 객체로 만든다.
+		let data4 = JSON.parse(data3);
+		console.log(data4);
+		console.log(typeof(data4));
+		console.log(data4.id);
+		console.log(data4.pass);
+		
+	</script>
+</body>
+</html>

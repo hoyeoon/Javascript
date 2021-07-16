@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>데이터 접근 변경하기</h2>
+	<div id="result">0</div>
+	<button onclick="upCount();">클릭</button>
+	<script>
+		function upCount(){
+			// 1. id가 result인 div에 접근
+			// 2. 내용(0)을 가져온다.
+			// 3. 내용에 +1
+			// 4. id가 result인 div에 써준다.
+			let divEl = document.getElementById("result");
+			
+			// 안쪽 내용(0) 접근
+			// innerHTML (안쪽 내용에 HTML 있을 경우. ex. <span>0</span>), innerText (안쪽 내용에 HTML 없을 경우)
+// 			alert(parseInt(divEl.innerText) + 1)
+			divEl.innerText = parseInt(divEl.innerText) + 1
+		}
+	</script>
+</body>
+</html>

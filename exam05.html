@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		// "", '', ``(backtick) - es6 템플릿 문자열
+		let msg = "자바스크립트 문자열";
+		console.log(msg);
+		msg = '자바스크립트 문자열';
+		console.log(msg);
+		msg = `자바스크립트 문자열`;
+		console.log(msg);
+		
+		msg = '의적의 이름은 "홍길동" 이었다';		
+		console.log(msg);
+		
+		let name = "홍길동";
+		let age = 29;
+		msg = "의적의 이름은 " + name + "이고, 나이는 " + age + "세 이다.";
+		console.log(msg);
+		msg = `의적의 이름은 ${name}이고, 나이는 ${age}세 이다.`;
+		console.log(msg);
+	</script>
+</body>
+</html>

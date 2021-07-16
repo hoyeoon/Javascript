@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+// 		let arr = new Array();
+		let arr = [];
+		console.log(arr.length);
+		console.log(arr[0]);
+		console.log(arr[1]);
+		console.log(arr[2]);
+		
+		arr[0] = 10;
+		arr[2] = 20;
+		console.log(arr.length);
+		console.log(arr[0]);
+		console.log(arr[1]);
+		console.log(arr[2]);
+		
+// 		arr[arr.length] = 30;
+		arr.push(30);
+		console.log(arr.length);
+		console.dir(arr);
+		
+		arr[1] = 100;
+		console.dir(arr);
+		
+		for(let i = 0; i < arr.length; i++){
+			console.log(arr[i]);
+		}
+		
+// 		function(a, b){return b - a}
+		
+		// 콜백함수 : 매개변수 또는 리턴값으로 함수를 사용. 내가하려는 일에 집중할 수 있음. 함수를 통해 반복문 등을 매번 작성하지 않아도 됨.
+		// 내림차순
+		arr.sort((a, b) => b - a);
+		console.dir(arr);
+		
+		// 오름차순
+		arr.sort((a, b) => a - b);
+		console.dir(arr);
+		
+// 		(v) => console.log(v)
+// 		function(v){
+// 			console.log(v)
+// 		}
+		arr.forEach((v) => console.log(v));
+		
+		
+	</script>
+</body>
+</html>

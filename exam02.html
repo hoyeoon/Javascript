@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="./exam02.js">
+	console.log("외부스크립트 호출 안에 log는 안찍힘. exam02.js가 덮어쓴다.")
+</script>
+
+<script>
+	// 아직 로딩되지 않은 문서의 내용을 사용할 수 없다.
+	// h1 태그 활용 안됨..
+	console.log("script 태그를 따로 빼서 작성해야한다.")
+	alert("외부스크립트 호출1")
+	alert("외부스크립트 호출2")
+</script>
+
+</head>
+<body>
+	<h1>테스트</h1>
+	
+	<script>
+		// 위쪽 문서 로딩된 엘리먼트 정보를 활용 가능하다.
+	</script>
+</body>
+</html>

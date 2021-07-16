@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+	// var는 현재 별로 사용하지 않음. let을 사용하자.
+	
+// 		console.log("email", email);	// 오류 발생
+		console.log("name = " + name); // var 변수가 코드 내에 아래라도 있으면 오류가 생기지 않음.
+		var name = "홍길동";
+		console.log(name);
+		
+		// var의 특성 - 호이스팅 : 변수가 위로 끌어올려져서 실행된다.
+// 		console.log("name = ", name2); // 오류 발생
+		let name2 = "김철수";	// let 변수는 초기화가 되어야만 사용 가능
+		console.log(name);
+		
+		// 호이스팅 예시2 - 별로 좋지 않다. var : 블록 밖에서도 접근 가능.
+		// let - 블록단위의 접근이 가능하다.
+		for (var i = 0; i < 5; i++){
+			console.log(i);
+		}
+		console.log(i);
+		
+		for (let j = 0; j < 5; j++){
+			console.log(j);
+		}
+// 		console.log(j); 오류
+
+
+		const name3 = "aaa";
+// 		name3 = "bbb"; // 상수는 변경 불가능
+		console.log(name3);
+	</script>
+</body>
+</html>

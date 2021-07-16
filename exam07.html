@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+	/*
+		자바의 람다식과 거의 유사...
+		
+		arrow function : ES6 부터 지원
+		함수를 심플하게 정의할 수 있게 됨
+		
+		function 키워드가 제거됨
+		function 이름(파라미터) { 해야할일 }
+		(파라미터) => { 해야할일 }
+	*/
+		function func1() { console.log("func1"); };
+		func1();
+		
+		// 화살표 함수로 만들고 호출하기
+		let func2 = () => { console.log("func2"); };
+		func2();
+		
+		let func3 = function(num) {
+			console.log(num * num);
+		};
+		func3(10);
+		
+		// 화살표 함수로 만들고 호출하기
+		let func4 = (num) => { console.log(num * num); };
+		func4(100);
+		
+		// 매개변수가 하나인 경우 괄호를 생략할 수 있다.
+		// 실행문장이 하나인 경우 중괄호 생략 가능
+		func5 = num => console.log(num * num);
+		func5(1000);
+		
+		let func6 = function(num) {
+			return num * num;
+		};
+		console.log(func6(10));
+		
+		// 실행문장이 하나일 경우 블럭을 제거하면 반드시 return을 제외해야 한다.
+		func6 = num => num * num;
+		console.log( func6(100) );
+		
+	</script>
+</body>
+</html>
